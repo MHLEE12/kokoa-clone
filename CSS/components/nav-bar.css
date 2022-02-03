@@ -5,7 +5,7 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
-  /*마법의 한줄....*/
+  /*padding값을 줘도 box사이즈를 늘리지 않도록 하는 것.*/
   border-top: 1px solid rgba(121, 121, 121, 0.2);
 }
 
@@ -16,4 +16,32 @@
 
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  /*사각형을 원으로 만들고 싶으면 사각형width의 1/2값을 넣으면 돼*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  /*position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직임
+  그러므로 말풍선에 빨간 1표시를 달아주려면 nav__link에 position:relative 달아줘야함*/
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__notification2 {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  left: 30px;
+  position: absolute;
 }
