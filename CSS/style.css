@@ -9,6 +9,8 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+@import "components/point.css";
 
 /*Screens*/
 @import "screens/login.css";
@@ -17,4 +19,8 @@
 body {
   font-family: "Roboto Mono", monospace;
   color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
